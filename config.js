@@ -11,6 +11,7 @@ global.Owner = ['919166253375']
 global.OwnerNumber = ['919166253375']
 global.ownertag = ['919166253375']
 global.BotName = "Miku"
+global.websitex = "https://youtu.be/WiIqCdiDjFo" //ur website to be displayed
 global.packname = "Miku bot"
 global.author = "By: Zeeshan"
 global.OwnerName = "Zeeshan"
