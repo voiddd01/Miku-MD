@@ -4779,6 +4779,19 @@ translate, fliptext, toletter
 
  🔰 Type " *${prefix}help* " to get full command list.`
  
+ const hhbut = [
+  { buttonId: '-repo', buttonText: { displayText: 'Repo' }, type: 1 },
+  { buttonId: '-help 1', buttonText: { displayText: '>' }, type: 1 }
+        ]
+let hbutto = {
+  image: { url: "https://wallpapercave.com/wp/wp10717316.jpg" },
+  caption: hlp,
+  footer: `${global.botname}`,
+  buttons: hhbut,
+  headerType: 4
+        }
+        ShikimoriInc.sendMessage(m.chat, hbutto, { quoted: m })
+    }
  let buttonshelpm = [
     {buttonId: `-owner`, buttonText: {displayText: 'Bot Owner'}, type: 1}
     ]
