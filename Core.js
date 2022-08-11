@@ -4778,17 +4778,7 @@ translate, fliptext, toletter
  🔰 To get Support Group link type " *${prefix}support* ".
 
  🔰 Type " *${prefix}help* " to get full command list.`
-                            hydratedButtons: [{
-                                quickReplyButton: {
-                                    displayText: '👤Owner👤',
-                                    id: `${prefix}owner`
-                                }
-                            }]
-                        }
-                    }
-                }), 
-                break
-
+     
  let buttonshelpm = [
     {buttonId: `-owner`, buttonText: {displayText: 'Bot Owner'}, type: 1}
     ]
