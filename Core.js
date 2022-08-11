@@ -4786,9 +4786,7 @@ translate, fliptext, toletter
                             }]
                         }
                     }
-                }), { userJid: m.chat })
-                XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
-                }
+                }), 
                 break
 
  let buttonshelpm = [
