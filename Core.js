@@ -4778,20 +4778,43 @@ translate, fliptext, toletter
  🔰 To get Support Group link type " *${prefix}support* ".
 
  🔰 Type " *${prefix}help* " to get full command list.`
- 
- const hhbut = [
-  { buttonId: '-repo', buttonText: { displayText: 'Repo' }, type: 1 },
-  { buttonId: '-help 1', buttonText: { displayText: '>' }, type: 1 }
-        ]
-let hbutto = {
-  image: { url: "https://wallpapercave.com/wp/wp10717316.jpg" },
-  caption: hlp,
-  footer: `${global.botname}`,
-  buttons: hhbut,
-  headerType: 4
-        }
-        ShikimoriInc.sendMessage(m.chat, hbutto, { quoted: m })
-    }
+     
+	                let btn = [{
+                                urlButton: {
+                                    displayText: 'YouTube 🍒',
+                                    url: `${websitex}`
+                                }
+                            }, {
+                                callButton: {
+                                    displayText: 'Script 🍜',
+                                    url: `${botscript}`
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Owner 🤣',
+                                    id: 'owner'
+                                }
+                            }]
+                         let setbot = db.data.settings[botNumber]
+                        if (setbot.templateImage) {
+                        miku.send5ButImg(m.chat, menulist, global.botname, global.thumb, btn, global.thumb)
+                        } else if (setbot.templateGif) {
+                        miku.send5ButVid(m.chat, anu, global.botname, global.vidmenu, btn, global.thumb)
+                        } else if (setbot.templateVideo) {
+                        miku.send5ButVid(m.chat, global.botname, global.vidmenu, btn, global.thumb)
+                        /////////} else if (setbot.templateMsg) {
+                        /////////XeonBotInc.send5ButMsg(m.chat, menulist, global.botname, btn)
+                        } else if (setbot.templateDocument) {
+                        let buttonmenu = [
+        	{ urlButton: { displayText: `YouTube 🍒`, url : `${websitex}` } },
+            { urlButton: { displayText: `Script 🍜`, url: `${botscript}` } },
+            { quickReplyButton: { displayText: `Owner 🤣`, id: 'owner'} }
+        	]
+        	Fantox.sendMessage(m.chat, { fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
+                        }
+                     }
+            break
+		
  let buttonshelpm = [
     {buttonId: `-owner`, buttonText: {displayText: 'Bot Owner'}, type: 1}
     ]
