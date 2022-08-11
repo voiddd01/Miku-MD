@@ -4780,44 +4780,32 @@ translate, fliptext, toletter
  🔰 Type " *${prefix}help* " to get full command list.`
      
  let buttonshelpm = [
-    {buttonId: `-owner`, buttonText: {displayText: 'Bot Owner'}, type: 1}
-    ]
-                let buttonMessage = {
-                    file: Miku.sendMessage(m.chat,{video:fs.readFileSync('./system/miku2.mp4'),gifPlayback:true,caption:helpmenu},{quoted:m}),
-                    caption: helpmenu,
-                    footer: `${BotName}`,
-                    buttons: buttonshelpm,
-                    headerType: 4
-                }
-            Miku.sendMessage(m.chat, buttonMessage,{ quoted:m })
-                }
-break
-
-
-
-case '':
-    if(isCmd){
-    if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-
-      mikupic ='https://wallpapercave.com/wp/wp10524580.jpg'
-    
-        
- const needhelpmenu = `Do you need help ${pushname} Senpai? Type *${prefix}help* to get my full command list.`
-     
-         let butRun = [
-                {buttonId: `-help`, buttonText: {displayText: 'Help'}, type: 1}
-                ]
-                let buttonMessage = {
-                    file: Miku.sendMessage(m.chat,{video:fs.readFileSync('./system/miku.mp4'),gifPlayback:true,caption:needhelpmenu},{quoted:m}),
-                    caption: needhelpmenu,
-                    footer: `${global.BotName}`,
-                    buttons: butRun,
-                    headerType: 4
-                }
-            Miku.sendMessage(m.chat,buttonMessage,{quoted:m})
-                }
-break
+	                let btn = [{
+                                urlButton: {
+                                    displayText: 'YouTube 🍒',
+                                    url: `${websitex}`
+                                }
+                            }, {
+                                callButton: {
+                                    displayText: 'Script 🍜',
+                                    url: `${botscript}`
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'All Menu 🍱',
+                                    id: 'allmenu'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'List Menu 🍢',
+                                    id: 'command'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Owner 🤣',
+                                    id: 'owner'
+                                }
+                            }]
 
 
 
