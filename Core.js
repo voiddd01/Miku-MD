@@ -4795,22 +4795,22 @@ translate, fliptext, toletter
                                     id: 'owner'
                                 }
                             }]
-                         let setbot = db.data.settings[botNumber]
+                         let setbot = db.data.config[botNumber]
                         if (setbot.templateImage) {
-                        miku.send5ButImg(m.chat, menulist, global.botname, global.thumb, btn, global.thumb)
+                        miku.send5ButImg(m.chat, global.botname, global.thumb, btn, global.thumb)
                         } else if (setbot.templateGif) {
-                        miku.send5ButVid(m.chat, anu, global.botname, global.vidmenu, btn, global.thumb)
+                        miku.send5ButVid(m.chat, anu, global.botname, btn, global.thumb)
                         } else if (setbot.templateVideo) {
-                        miku.send5ButVid(m.chat, global.botname, global.vidmenu, btn, global.thumb)
+                        miku.send5ButVid(m.chat, global.botname, btn, global.thumb)
                         /////////} else if (setbot.templateMsg) {
-                        /////////XeonBotInc.send5ButMsg(m.chat, menulist, global.botname, btn)
+                        /////////Miku.send5ButMsg(m.chat, global.botname, btn)
                         } else if (setbot.templateDocument) {
                         let buttonmenu = [
         	{ urlButton: { displayText: `YouTube 🍒`, url : `${websitex}` } },
             { urlButton: { displayText: `Script 🍜`, url: `${botscript}` } },
             { quickReplyButton: { displayText: `Owner 🤣`, id: 'owner'} }
         	]
-        	Fantox.sendMessage(m.chat, { fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
+        	miku.sendMessage(m.chat, { fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
                         }
                      }
             break
