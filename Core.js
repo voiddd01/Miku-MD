@@ -4793,16 +4793,22 @@ translate, fliptext, toletter
  🔰 To get Support Group link type " *${prefix}support* ".
 
  🔰 Type " *${prefix}help* " to get full command list.`
-                            hydratedButtons: [{
-                                urlButton: {
-                                    displayText: 'YouTube📍',
-                                    url: `${myweb}`
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Bot Owner',
-                                    id: `${prefix}owner`
-                            }]
+
+ 
+         const hhbut = [
+  { buttonId: '-repo', buttonText: { displayText: 'Repo' }, type: 1 },
+  { buttonId: '-help 1', buttonText: { displayText: '>' }, type: 1 }
+         ]
+         let hbutto = {
+  image: { url: "https://wallpapercave.com/wp/wp10717316.jpg" },
+  caption: hlp,
+  footer: `${global.botname}`,
+  buttons: hhbut,
+  headerType: 4
+        }
+        Miku.sendMessage(m.chat, hbutto, { quoted: m })
+    }
+		
  let buttonshelpm = [
     {buttonId: `-owner`, buttonText: {displayText: 'Bot Owner'}, type: 1}
     ]
