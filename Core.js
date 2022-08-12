@@ -4713,8 +4713,8 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
 I am *Miku Nakano*, a bot developed by *Zeeshan*.
 
 Here is the guide of making your own Bot on your own number :) 
+
 Kindly subscribe
-https://www.youtube.com/watch?v=GTJ6VcHm0Jo
 https://www.youtube.com/watch?v=GTJ6VcHm0Jo
 
 🔰 My prefix is:  ${prefix}
@@ -4800,6 +4800,7 @@ translate, fliptext, toletter
  🔰 Type " *${prefix}help* " to get full command list.`
      
  let buttonshelpm = [
+    { urlButton: { displayText: `YouTube `, url : `${websitex}` } },
     {buttonId: `-owner`, buttonText: {displayText: 'Bot Owner'}, type: 1}
     ]
                 let buttonMessage = {
