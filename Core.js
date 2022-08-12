@@ -4802,7 +4802,7 @@ translate, fliptext, toletter
                                 quickReplyButton: {
                                     displayText: 'Bot Owner',
                                     id: `${prefix}owner`
-                                }]
+                            }]
  let buttonshelpm = [
     {buttonId: `-owner`, buttonText: {displayText: 'Bot Owner'}, type: 1}
     ]
