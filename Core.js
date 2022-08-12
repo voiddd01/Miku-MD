@@ -4822,7 +4822,6 @@ break
         }
         Miku.sendMessage(m.chat, hbutto, { quoted: m })
     }
-break
 
 
 
