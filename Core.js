@@ -4803,9 +4803,6 @@ translate, fliptext, toletter
                                     displayText: 'Bot Owner',
                                     id: `${prefix}owner`
                                 }
-                            }]
-                        }
-                    }
  let buttonshelpm = [
     {buttonId: `-owner`, buttonText: {displayText: 'Bot Owner'}, type: 1}
     ]
