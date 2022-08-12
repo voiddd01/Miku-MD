@@ -4794,6 +4794,21 @@ translate, fliptext, toletter
 
  🔰 Type " *${prefix}help* " to get full command list.`
 
+  let buttonshelpm = [
+    {buttonId: `-owner`, buttonText: {displayText: 'Bot Owner'}, type: 1}
+    ]
+                let buttonMessage = {
+                    file: Miku.sendMessage(m.chat,{video:fs.readFileSync('./system/miku2.mp4'),gifPlayback:true,caption:helpmenu},{quoted:m}),
+                    caption: helpmenu,
+                    footer: `${BotName}`,
+                    buttons: buttonshelpm,
+                    headerType: 4
+                }
+            Miku.sendMessage(m.chat, buttonMessage,{ quoted:m })
+                }
+break
+		
+		
          const hhbut = [
   { buttonId: '-repo', buttonText: { displayText: 'Repo' }, type: 1 },
   { buttonId: '-help 1', buttonText: { displayText: '>' }, type: 1 }
