@@ -13,6 +13,7 @@ global.ownertag = ['919166253375']
 global.BotName = "Miku"
 global.websitex = "https://youtu.be/WiIqCdiDjFo" //ur website to be displayed
 global.packname = "Miku bot"
+global.myweb = 'https://youtu.be/WiIqCdiDjFo'
 global.author = "By: Zeeshan"
 global.OwnerName = "Zeeshan"
 global.BotSourceCode = "https://www.youtube.com/watch?v=GTJ6VcHm0Jo"
