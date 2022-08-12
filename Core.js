@@ -4793,8 +4793,6 @@ translate, fliptext, toletter
  🔰 To get Support Group link type " *${prefix}support* ".
 
  🔰 Type " *${prefix}help* " to get full command list.`
-     │✑  Please Select The Button Below
-   └───────────────┈ ⳹`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'YouTube📍',
