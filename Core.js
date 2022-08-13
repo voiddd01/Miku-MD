@@ -4795,10 +4795,8 @@ displayText: 'Bot Owner',
 id: '-owner'
 }
 }]
-let txt = `「 *${global.OwnerName}'s Broadcast* 」\n\n${text}`
+let txt = `「 *${global.OwnerName}'s* 」\n\n${text}`
 Miku.send5ButImg(yoi, txt, `${global.BotName}`, BotLogo, btn, Thumb)
-}
-replay('Broadcast Sent !')
 }
 break    
 
