@@ -1395,9 +1395,6 @@ switch(command) {
     let buttons = [
     {buttonId: `-menu`, buttonText: {displayText: '✨Bot Menu✨'}, type: 1}
     ]
-    let buttons = [
-    {buttonId: `-owner`, buttonText: {displayText: '✨Owner sahab✨'}, type: 1}
-    ]
     let buttonMessage = {
     image: Thumb,
     jpegThumbnail: BotLogo ,
