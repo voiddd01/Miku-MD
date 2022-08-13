@@ -1395,6 +1395,9 @@ switch(command) {
     let buttons = [
     {buttonId: `-menu`, buttonText: {displayText: '✨Bot Menu✨'}, type: 1}
     ]
+    let buttons = [
+    {buttonId: `-owner`, buttonText: {displayText: '✨Owner sahab✨'}, type: 1}
+    ]
     let buttonMessage = {
     image: Thumb,
     jpegThumbnail: BotLogo ,
@@ -4784,19 +4787,6 @@ translate, fliptext, toletter
 🍁 Type " *${prefix}nsfw* " then enable NSFW (Admin only!) 
 
 🍁 Then type " *${prefix}nsfwmenu* " to get full list of NSFW commands.
-let btn = [{
-quickReplyButton: {
-displayText: '✨Menu✨',
-id: '-menu'
-}  
-}, {
-quickReplyButton: {
-displayText: 'Bot Owner',
-id: '-owner'
-}
-}]
-break    
-
 
 
 
