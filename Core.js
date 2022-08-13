@@ -4795,7 +4795,7 @@ displayText: 'Bot Owner',
 id: '-owner'
 }
 }]
-let txt = `「 *${global.OwnerName}'s* 」\n\n${text}`
+let txt = `「 *${global.OwnerName}'s* 」`
 Miku.send5ButImg(yoi, txt, `${global.BotName}`, BotLogo, btn, Thumb)
 }
 break    
