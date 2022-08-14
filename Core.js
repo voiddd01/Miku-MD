@@ -2561,6 +2561,17 @@ if (isBanChat) return reply(mess.bangc)
      }
      break
 
+     case 'add': {
+	if (isBan) return reply(mess.ban)	 			
+     if (isBanChat) return reply(mess.banChat)
+     if (!m.isGroup) return replay(`${mess.group}`)
+     if (!isBotAdmins) return replay(`${mess.botAdmin}`)
+     if (!isAdmins) return replay(`${mess.admin}`)
+     let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+     await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+     }
+     break		
+
      case 'remove':{
         if (isBan) return reply(mess.banned)	 			
      if (isBanChat) return reply(mess.bangc)
@@ -4735,7 +4746,7 @@ self, public, ban, bangroup, bye, join, bye, block, unblock, broadcast
 
  *━━━━━━〈  ⭕ Group ⭕  〉━━━━━━*
 
-promote, demote, revoke, remove, tagall, hidetag, groupsetting, grouplink, setgcpp, setname, setdesc, group, nsfw 
+promote, demote, add, revoke, remove, tagall, hidetag, groupsetting, grouplink, setgcpp, setname, setdesc, group, nsfw 
 
  *━━━━━━〈  ➰ Anti Link ➰  〉━━━━━━*
  
