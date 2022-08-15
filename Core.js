@@ -4517,7 +4517,7 @@ case 'truth':
              ]
                            const mikutruthww = truth[Math.floor(Math.random() * truth.length)]
                            buffer =  await axios.get('https://waifu.pics/api/sfw/waifu')
-                           Miku.sendMessage(from, { image: buffer, caption: '*You have chosen Truth*\n'+ mikutruthww }, {quoted:m})
+                           Miku.sendMessage(from, { image: {url:waifuddd.data.url}: '*You have chosen Truth*\n'+ mikutruthww }, {quoted:m})
                            break
 
 
