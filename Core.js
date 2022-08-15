@@ -4516,7 +4516,7 @@ case 'truth':
                  "do you play pubg, if you then send ur id number"
              ]
                            const mikutruthww = truth[Math.floor(Math.random() * truth.length)]
-                           buffer =  await axios.get('https://www.google.com/search?q=google+images&sxsrf=ALiCzsZI2zCgdz81X3VEzmqSYtkYvy8i7g:1660547028312&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjEgoXeo8j5AhX2-jgGHcpHDuoQ_AUoAXoECAEQAw&biw=1366&bih=657&dpr=1')
+                           buffer =  await axios.get('https://source.unsplash.com/720x600/?sex')
                            Miku.sendMessage(from, { image: buffer, caption: '*You have chosen Truth*\n'+ mikutruthww }, {quoted:m})
                            break
 
