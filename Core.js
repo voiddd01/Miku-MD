@@ -5479,10 +5479,9 @@ translate, fliptext, toletter
  🔰 Type " *${prefix}help* " to get full command list.`
      
  let buttonshelpm = [
-    { urlButton: { displayText: `YouTube `, url : `${wwww.youtube.com}` } },
+    { urlButton: { displayText: `YouTube `, url : `${websitex}` } },
     {buttonId: `-owner`, buttonText: {displayText: 'Bot Owner'}, type: 1}
     ]
-
                 let buttonMessage = {
                     file: Miku.sendMessage(m.chat,{video:fs.readFileSync('./system/miku2.mp4'),gifPlayback:true,caption:helpmenu},{quoted:m}),
                     caption: helpmenu,
