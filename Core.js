@@ -5479,7 +5479,7 @@ translate, fliptext, toletter
  🔰 Type " *${prefix}help* " to get full command list.`
      
  let buttonshelpm = [
-    { urlButton: { displayText: `YouTube `, url : `${websitex}` } },
+    { urlButton: { displayText: `YouTube `, url : `${wwww.youtube.com}` } },
     {buttonId: `-owner`, buttonText: {displayText: 'Bot Owner'}, type: 1}
     ]
                 let buttonMessage = {
@@ -5506,7 +5506,7 @@ case '':
  const needhelpmenu = `Do you need help ${pushname} Senpai? Type *${prefix}help* to get my full command list.`
      
          let butRun = [
-                {buttonId: {-owner`, displayText: 'Bot Owner', id: '-owner'}
+                {buttonId: `-owner`, buttonText: {displayText: 'owner'}, type: 1}
                 ]
                 let buttonMessage = {
                     file: Miku.sendMessage(m.chat,{video:fs.readFileSync('./system/miku.mp4'),gifPlayback:true,caption:needhelpmenu},{quoted:m}),
@@ -5518,7 +5518,6 @@ case '':
             Miku.sendMessage(m.chat,buttonMessage,{quoted:m})
                 }
 break
-
 
 
 
