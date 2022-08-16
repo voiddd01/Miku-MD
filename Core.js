@@ -4516,7 +4516,7 @@ case 'truth':
                  "do you play pubg, if you then send ur id number"
              ]
                            const mikutruthww = truth[Math.floor(Math.random() * truth.length)]
-                           buffer = await getBuffer(`https://nekos.life/`)
+                           buffer = await getBuffer(`https://source.unsplash.com/720x600/?sex`)
                            Miku.sendMessage(from, { image: buffer, caption: '*You have chosen Truth*\n'+ mikutruthww }, {quoted:m})
                            break
 
