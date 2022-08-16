@@ -5506,7 +5506,7 @@ case '':
  const needhelpmenu = `Do you need help ${pushname} Senpai? Type *${prefix}help* to get my full command list.`
      
          let butRun = [
-                {quickReplyButton: {-owner`, displayText: 'Bot Owner', id: '-owner'}
+                {buttonId: {-owner`, displayText: 'Bot Owner', id: '-owner'}
                 ]
                 let buttonMessage = {
                     file: Miku.sendMessage(m.chat,{video:fs.readFileSync('./system/miku.mp4'),gifPlayback:true,caption:needhelpmenu},{quoted:m}),
