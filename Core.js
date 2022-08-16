@@ -5335,6 +5335,44 @@ teks += `${res.quotes}\n`
 replay(teks)
 break
 
+      case "fact":
+        {
+          await axios
+            .get(`https://nekos.life/api/v2/fact`)
+            .then((response) => {
+              const tet = `*Fact:* ${response.data.fact}\n\n*𝑷𝒐𝒘𝒆𝒓𝒆𝒅 𝒃𝒚 ${LangG.title} 𝐌𝐝*`;
+              miku.sendMessage(
+                from,
+                {
+                  image: {
+                    url: picsecktor,
+                  },
+                  caption: tet,
+                  footer: LangG.footer,
+                  templateButtons: [
+                    {
+                      urlButton: {
+                        displayText: "⭐𝐖𝐞𝐛",
+                        url: "https://citel.vercel.app",
+                      },
+                    },
+                  ],
+                },
+                {
+                  quoted: m,
+                }
+              );
+            })
+            .catch((err) => {
+              m.reply(`✖  An error occurred.`);
+            })
+
+            .catch((err) => {
+              m.reply(`Uhh,Got an Error ✖.`);
+            });
+        }
+         break;		
+		
 case "darkjoke":
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
