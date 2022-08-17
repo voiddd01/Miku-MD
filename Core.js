@@ -5440,81 +5440,257 @@ https://www.youtube.com/watch?v=GTJ6VcHm0Jo
 
 Here's the list of my Commands.
  
-
-
- *━━━━━━〈  🎆 Core 🎆  〉━━━━━━*
-
-profile, help, delete, listgc, listpc, welcome, support, repo, script 
  
- *━━━━━━〈  🎀 Owner 🎀  〉━━━━━━*
+╔════⧫🧧𝑪𝒐𝒓𝒆🧧
+║
+║ -profile
+║ -help
+║ -delete
+║ -listgc
+║ -listpc
+║ -support
+║ -repo
+║ -script
+║
+╚════════════╝ 
 
-self, public, ban, bangroup, bye, join, bye, block, unblock, broadcast 
+╔════⧫🎀𝑶𝒘𝒏𝒆𝒓🎀
+║
+║ -self
+║ -public
+║ -ban
+║ -bangroup
+║ -bye
+║ -join
+║ -block
+║ -unblock
+║ -broadcast
+║
+╚════════════╝
 
- *━━━━━━〈  ⭕ Group ⭕  〉━━━━━━*
+╔════⧫👥𝑮𝒓𝒐𝒖𝒑👥
+║
+║ -promote
+║ -demote
+║ -revoke
+║ -add
+║ -remove
+║ -tagall
+║ -hidetag
+║ -groupsetting
+║ -grouplink
+║ -setgcpp
+║ -setname
+║ -setdesc
+║ -group
+║ -nsfw
+║ -welcome
+║
+╚════════════╝
 
-promote, demote, add, revoke, remove, tagall, hidetag, groupsetting, grouplink, setgcpp, setname, setdesc, group, nsfw 
+╔════⧫⛓️𝑨𝒏𝒕𝒊 𝑳𝒊𝒏𝒌⛓️
+║
+║ -antilinkgc
+║ -antilinktg
+║ -antilinktt
+║ -antilinkytch
+║ -antilinkytvid
+║ -antilinkig
+║ -antilinkfb
+║ -antilinktwit
+║ -antilinkall
+║ -antiwame
+║
+╚════════════╝
 
- *━━━━━━〈  ➰ Anti Link ➰  〉━━━━━━*
+╔════⧫🔎𝑺𝒆𝒂𝒓𝒄𝒉🔍
+║
+║ -play
+║ -song
+║ -yts
+║ -lyrics
+║ -google
+║ -playstore
+║ -gimage
+║ -pinterest
+║ -image
+║ -movie
+║ -wallpaper
+║ -searchgc
+║ -happymod
+║ -wikimedia
+║ -ringtone
+║ -anime
+║ -animestory
+║ -manga
+║
+╚════════════╝
+
+╔════⧫⚙️𝑪𝒐𝒏𝒗𝒆𝒓𝒕⚙️
+║
+║ -sticker
+║ -toimg
+║ -tovideo
+║ -togif
+║ -steal
+║ -stickermeme
+║ -emojimix
+║ -tourl
+║ -tomp3
+║ -toaudio
+║
+╚════════════╝
+
+╔════⧫🔉𝑨𝒖𝒅𝒊𝒐🔉
+║
+║ -bass
+║ -tempo
+║ -blown
+║ -deep
+║ -earrape
+║ -fast
+║ -fat
+║ -nightcore
+║ -reverse
+║ -robot
+║ -slow
+║ -squirrel
+║
+╚════════════╝
+
+╔════⧫💥𝑹𝒆𝒂𝒄𝒕𝒊𝒐𝒏𝒔💥
+║
+║ -bonk
+║ -cry
+║ -bully
+║ -cuddle
+║ -hug
+║ -kiss
+║ -lick
+║ -pat
+║ -smug
+║ -yeet
+║ -blush
+║ -smile
+║ -wave
+║ -highfive
+║ -handhold
+║ -nom
+║ -glomp
+║ -bite
+║ -slap
+║ -kill
+║ -happy
+║ -wink
+║ -poke
+║ -dance
+║ -cringe
+║
+╚════════════╝
  
-antilinkgc, antilinktg, antilinktt, antilinkytch, antilinkytvid, antilinkig, antilinkfb, antilinktwit, antilinkall, antiwame
-
- *━━━━━━〈  🔍 Search 🔍  〉━━━━━━*
-
-play, song, yts, lyrics, google, playstore, gimage, pinterest, image, movie, wallpaper, searchgc, happymod, wikimedia, ringtone, anime, animestory, manga, ringtone   
-
- *━━━━━━〈  🔰 Convert 🔰  〉━━━━━━*
-
-sticker, toimg, tovideo, togif , steal, stickermeme, emojimix, tourl, tomp3, toaudio
-
- *━━━━━━〈  🔉 Audio 🔉  〉━━━━━━*
-
-bass, tempo, blown, deep, earrape, fast, fat, nightcore, reverse, robot, slow, squirrel
-
- *━━━━━━〈  📍 Reactions 📍  〉━━━━━━*
-
-bonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe
-
- *━━━━━━〈  🌌 Downloader 🌌  〉━━━━━━*
-
-play, ytmp3, ytmp4, ytvideo, mediafire, instagram, igtv, facebook, fbmp3, twitter, twittermp3, tiktok, tiktokaudio, tiktoknowm, mediafire  
-
- *━━━━━━〈  🈴 Weeb 🈴  〉━━━━━━*
-
-waifu, loli, neko, ppcouple, feed, foxgirl, feed, meow, tickle, wallpaper, coffee, animenom, waifu3, neko2, feed, meow, tickle, migumin, awoo, animewallpaper2, anime, manga
-
- *━━━━━━〈  ♨️ Informative ♨️  〉━━━━━━*
-
-animequote, quote, covid, earthquake, wiki
-
- *━━━━━━〈  🎗 Others 🎗  〉━━━━━━*
-
-stickermeme, quotes, darkjoke 
-
- *━━━━━━〈  🎐 Fun 🎐  〉━━━━━━*
-
-reaction, truth, dare, couple, soulmate, handsomecheck, beautifulcheck, awesomecheck, greatcheck, gaycheck, cutecheck, lesbiancheck, hornycheck, prettycheck, lovelycheck, uglycheck, charactercheck
-
- *━━━━━━〈  🪁 Essentials 🪁  〉━━━━━━*
-
-translate, fliptext, toletter
-
- *━━━━━━〈  💥 NSFW 💥  〉━━━━━━*
-
-🍁 Type " *${prefix}nsfw* " then enable NSFW (Admin only!) 
-
-🍁 Then type " *${prefix}nsfwmenu* " to get full list of NSFW commands.
-
-
-
- 『  *${global.BotName}*  』
- Powered by: *Zeeshan*
-
- 🔰 To use any of these commands type 
- " *${prefix}<Command name>* ".
+╔════⧫📥𝑫𝒐𝒘𝒏𝒍𝒐𝒂𝒅𝒆𝒓📥
+║
+║ -play
+║ -ytmp3
+║ -ytmp4
+║ -ytvideo
+║ -mediafire
+║ -instagram
+║ -igtv
+║ -facebook
+║ -fbmp3
+║ -twitter
+║ -twittermp3
+║ -tiktok
+║ -tiktokaudio
+║ -tiktoknowm
+║
+╚════════════╝
  
- 🔰 To get Support Group link type " *${prefix}support* ".
+╔════⧫☄️𝑾𝒆𝒆𝒃☄️
+║
+║ -waifu
+║ -loli
+║ -neko
+║ -ppcouple
+║ -feed
+║ -foxgirl
+║ -meow
+║ -tickle
+║ -wallpaper
+║ -coffee
+║ -animenom
+║ -waifu3
+║ -neko2
+║ -migumin
+║ -awoo
+║ -anime
+║ -animewallpaper2
+║ -manga
+║
+╚════════════╝
+ 
+╔════⧫📣𝑰𝒏𝒇𝒐𝒓𝒎𝒂𝒕𝒊𝒗𝒆📣
+║
+║ -animequote
+║ -quote
+║ -covid
+║ -earthquake
+║ -wiki
+║
+╚════════════╝
+ 
+╔════⧫🦋𝑭𝒖𝒏🦋
+║
+║ -reaction
+║ -truth
+║ -dare
+║ -couple
+║ -soulmate
+║ -handsomecheck
+║ -beautifulcheck
+║ -awesomecheck
+║ -greatcheck
+║ -gaycheck
+║ -cutecheck
+║ -lesbiancheck
+║ -hornycheck
+║ -prettycheck
+║ -lovelycheck
+║ -uglycheck
+║ -charactercheck
+║ -quotes
+║ -darkjoke
+║ -stickermeme
+║
+╚════════════╝
+ 
+╔════⧫🐬𝑬𝒔𝒔𝒆𝒏𝒕𝒊𝒂𝒍/𝑶𝒕𝒉𝒆𝒓𝒔🐬
+║
+║ -translate
+║ -fliptext
+║ -toletter
+║
+╚════════════╝
+ 
+╔════⧫🐾𝑵𝑺𝑭𝑾 🐾
+║
+║ 🍊 Type " -nsfw " then enable NSFW (Admin only) 
+║
+║  🍑 Then type " -nsfwmenu " to get full list of NSFW commands.
+╚════════════╝
 
- 🔰 Type " *${prefix}help* " to get full command list.`
+
+
+ 『  Miku-MD  』
+ Powered by: Zeeshan
+
+ 🎐 To use any of these commands type 
+ " -<Command name> ".
+ 
+ 🎐 To get Support Group link type " -support ".
+
+ 🎐 Type " -help " to get full command list.
      
  let buttonshelpm = [
     { urlButton: { displayText: `YouTube `, url : `${websitex}` } },
