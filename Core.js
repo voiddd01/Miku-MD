@@ -5693,7 +5693,7 @@ Here's the list of my Commands.
  🎐 Type " -help " to get full command list.
      
  let buttonshelpm = [
-    { urlButton: { displayText: `YouTube `, url : `${websitex}` } },
+    { urlButton: { displayText: `owner `, url : `${global.OwnerNumber}` } },
     {buttonId: `-owner`, buttonText: {displayText: 'Bot Owner'}, type: 1}
     ]
                 let buttonMessage = {
