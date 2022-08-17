@@ -5673,25 +5673,20 @@ Here's the list of my Commands.
 ║
 ╚════════════╝
  
-╔════⧫🐾𝑵𝑺𝑭𝑾 🐾
-║
-║ 🍊 Type " -nsfw " then enable NSFW (Admin only) 
-║
-║  🍑 Then type " -nsfwmenu " to get full list of NSFW commands.
-╚════════════╝
+🍁 Type " *${prefix}nsfw* " then enable NSFW (Admin only!) 
+🍁 Then type " *${prefix}nsfwmenu* " to get full list of NSFW commands.
 
 
 
- 『  Miku-MD  』
- Powered by: Zeeshan
-
- 🎐 To use any of these commands type 
- " -<Command name> ".
+ 『  *${global.BotName}*  』
+ Powered by: *Zeeshan*
  
- 🎐 To get Support Group link type " -support ".
-
- 🎐 Type " -help " to get full command list.
+ 🔰 To use any of these commands type 
+ " *${prefix}<Command name>* ".
  
+ 🔰 To get Support Group link type " *${prefix}support* ".
+ 🔰 Type " *${prefix}help* " to get full command list.`
+     
       let buttonshelpm = [
     {buttonId: `-owner`, buttonText: {displayText: 'Bot Owner'}, type: 1}
     ]
