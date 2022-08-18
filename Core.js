@@ -5688,7 +5688,7 @@ Here's the list of my Commands.
  🔰 Type " *${prefix}help* " to get full command list.`
      
       let buttonshelpm = [
-    {buttonId: `-owner`, buttonText: {displayText: 'Bot Owner'}, type: 1}
+{ quickReplyButton: { displayText: `Owner 🤣`, id: 'owner'} }
     ]
                 let buttonMessage = {
                     file: Miku.sendMessage(m.chat,{video:fs.readFileSync('./system/miku2.mp4'),gifPlayback:true,caption:helpmenu},{quoted:m}),
