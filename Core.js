@@ -1555,7 +1555,7 @@ case 'limituser': case 'userlimit': case 'limit':
     
       case 'tts':
         {
-          if (q === 'help') {
+          if (q === "help") {
             await m.reply(
               `*❗Command:* Text-To-Speech\n*🍀Aliases* -tts\n*🧩Category:* Downloader/Utils\n*🛠️Usage:* ${
                 prefix + command
