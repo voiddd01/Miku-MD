@@ -2568,7 +2568,7 @@ if (isBanChat) return reply(mess.bangc)
      if (!isBotAdmins) return replay(`${mess.botAdmin}`)
      if (!isAdmins) return replay(`${mess.admin}`)
      let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-     await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+     await Miku.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
      }
      break		
 
