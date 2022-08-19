@@ -5459,7 +5459,8 @@ break
 case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
-      
+Miku.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})    
+	
  const helpmenu = `Konichiwa *${pushname}* Senpai,
 
 I am *Miku Nakano*, a bot developed by *Zeeshan*.
