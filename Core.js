@@ -1553,7 +1553,42 @@ case 'limituser': case 'userlimit': case 'limit':
               }
              break
     
-
+      case 'tts':
+        {
+          if (q === 'help') {
+            await m.reply(
+              `*❗Command:* Text-To-Speech\n*🍀Aliases* -tts\n*🧩Category:* Downloader/Utils\n*🛠️Usage:* ${
+                prefix + command
+              } Text\n\n*📚Description:* Changes your text into Voice`
+            );
+            return;
+          }
+          let texttts = text
+            ? text
+            : m.quoted && m.quoted.text
+            ? m.quoted.text
+            : m.text;
+          const googleTTS = require("google-tts-api"); // CommonJS
+          const ttsurl = googleTTS.getAudioUrl(texttts, {
+            lang: "en",
+            slow: false,
+            host: "https://translate.google.com",
+          });
+          miku.sendMessage(
+            m.chat,
+            {
+              audio: {
+                url: ttsurl,
+              },
+              mimetype: "audio/mpeg",
+              fileName: `ttsCitelVoid.m4a`,
+            },
+            {
+		    quoted: m,
+            }
+          );
+        }
+        break;
 
 
 case 'ringtone': {
