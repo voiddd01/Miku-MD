@@ -16,6 +16,7 @@ global.packname = "Miku bot"
 global.myweb = 'https://youtu.be/WiIqCdiDjFo'
 global.author = "By: Zeeshan"
 global.OwnerName = "Zeeshan"
+global.reactmoji = "😘" //ur menu react emoji
 global.BotSourceCode = "https://www.youtube.com/watch?v=GTJ6VcHm0Jo"
 global.SupportGroupLink = "https://www.youtube.com/watch?v=GTJ6VcHm0Jo"
 global.sessionName = "session"
