@@ -3695,18 +3695,6 @@ case 'charactercheck':
 					const taky = Mikutttt[Math.floor(Math.random() * Mikutttt.length)]
 					Miku.sendMessage(from, { text: `Character Check : ${q}\nAnswer : *${taky}*` }, { quoted: m })
 				     break
-
- case 'story':
-    if (isBan) return reply(mess.banned)
-    if (isBanChat) return reply(mess.bangc)
-                   const dare =[
-          "A Boy was given permission to put his hand into a pitcher to get some filberts. But he took such a great fistful that he could not draw his hand out again. There he stood, unwilling to give up a single filbert and yet unable to get them all out at once. Vexed and disappointed he began to cry My boy said his mother be satisfied with half the nuts you have taken and you will easily get your hand out. Then perhaps you may have some more filberts some other time.Do not attempt too much at once.",
-"He loved three things alive White peacocks songs at eve And antique maps of America Hated when children cried And raspberry jam with tea And feminine hysteria And he had married me"
-     ]
-                   const Mikudareww = dare[Math.floor(Math.random() * dare.length)]
-                   buffer = await getBuffer(`https://source.unsplash.com/720x600/?story`)
-                   Miku.sendMessage(from, { image: buffer, caption: '*You have chosen story*\n\n'+ Mikudareww }, {quoted:m})
-                   break
 		
  case 'dare':
     if (isBan) return reply(mess.banned)
