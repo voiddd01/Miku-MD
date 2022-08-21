@@ -3790,7 +3790,7 @@ case 'charactercheck':
             let buttons = [
                         { buttonId: '👀', buttonText: { displayText: '👀😂' }, type: 1 }
                     ]
-                    await Miku.sendButtonText(m.chat, buttons, jawab, botname, m, {mentions: ments})
+                    await Miku.sendButtonText(m.chat, buttons, jawab, Miku, m, {mentions: ments})
             }
             break
 		
