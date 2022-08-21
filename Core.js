@@ -3695,6 +3695,104 @@ case 'charactercheck':
 					const taky = Mikutttt[Math.floor(Math.random() * Mikutttt.length)]
 					Miku.sendMessage(from, { text: `Character Check : ${q}\nAnswer : *${taky}*` }, { quoted: m })
 				     break
+
+      case 'foolish':
+      case 'smart':
+      case 'idiot':
+      case 'gay':
+      case 'lesbi':
+      case 'bastard':
+      case 'stubble':
+      case 'dog':
+      case 'fuck':
+      case 'ape':
+      case 'noob':
+      case 'great':
+      case 'horny':
+      case 'wibu':
+      case 'asshole':
+      case 'handsome':
+      case 'beautiful':
+      case 'cute':
+      case 'kind':
+      case 'ugly':
+      case 'pretty':
+      case 'lesbian':
+      case 'randi':
+      case 'gandu':
+      case 'madarchod':
+      case 'kala':
+      case 'gora':
+      case 'chutiya':
+      case 'nibba':
+      case 'nibbi':
+      case 'bhosdiwala':
+      case 'chutmarika':
+      case 'bokachoda':
+      case 'suarerbaccha':
+      case 'bolochoda':
+      case 'muthal':
+      case 'muthbaaz':
+      case 'randibaaz':
+      case 'topibaaz':
+      case 'cunt':
+      case 'nerd':
+      case 'behenchod':
+      case 'behnchoda':
+      case 'bhosdika':
+      case 'nerd':
+      case 'mc':
+      case 'bsdk':
+      case 'bhosdk':
+      case 'nigger':
+      case 'loda':
+      case 'laund':
+      case 'nigga':
+      case 'noobra':
+      case 'tharki':
+      case 'nibba':
+      case 'nibbi':
+      case 'mumu':
+      case 'rascal':
+      case 'scumbag':
+      case 'nuts':
+      case 'comrade':
+      case 'fagot':
+      case 'scoundrel':
+      case 'ditch':
+      case 'dope':
+      case 'gucci':
+      case 'lit':
+      case 'dumbass':
+      case 'sexy':
+      case 'crackhead':
+      case 'mf':
+      case 'motherfucker':
+      case 'dogla':
+      case 'bewda':
+      case 'boka':
+      case 'khanki':
+      case 'bal':
+      case 'sucker':
+      case 'fuckboy':
+      case 'playboy':
+      case 'fuckgirl':
+      case 'playgirl':
+      case 'hot': {
+      	            	if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+            if (!m.isGroup) return replay(`${mess.group}`)
+            let member = participants.map(u => u.id)
+            let me = m.sender
+            let jodoh = member[Math.floor(Math.random() * member.length)]
+            let jawab = `The Most *${command}* Here Is @${jodoh.split('@')[0]}`
+            let ments = [me, jodoh]
+            let buttons = [
+                        { buttonId: '👀', buttonText: { displayText: '👀😂' }, type: 1 }
+                    ]
+                    await Miku.sendButtonText(m.chat, buttons, jawab, botname, m, {mentions: ments})
+            }
+            break
 		
  case 'dare':
     if (isBan) return reply(mess.banned)
