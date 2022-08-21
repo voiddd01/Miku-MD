@@ -5639,30 +5639,221 @@ replay('Broadcast Sent !')
 }
 break    
 
-
-case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
-    if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-Miku.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})    
-	
- const helpmenu = `Konichiwa *${pushname}* Senpai,
-
-I am *Miku Nakano*, a bot developed by *Zeeshan*.
-
-Here is the guide of making your own Bot on your own number :) 
-
-Kindly subscribe
-https://www.youtube.com/watch?v=GTJ6VcHm0Jo
-
-https://www.youtube.com/watch?v=GTJ6VcHm0Jo
-
-🔰 My prefix is:  ${prefix}
-
-Here's the list of my Commands.
- 
- 
-╔════⧫🧧𝑪𝒐𝒓𝒆🧧
-║
+case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
+		if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+Miku.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
+	                let btn = [{
+                                urlButton: {
+                                    displayText: 'YouTube 🍒',
+                                    url: `${websitex}`
+                                }
+                            }, {
+                                callButton: {
+                                    displayText: 'Script 🍜',
+                                    url: `${botscript}`
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'All Menu 🍱',
+                                    id: 'allmenu'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'List Menu 🍢',
+                                    id: 'command'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Owner 🤣',
+                                    id: 'owner'
+                                }
+                            }]
+                         let setbot = db.data.settings[botNumber]
+                        if (setbot.templateImage) {
+                        Miku.send5ButImg(m.chat, menulist, global.botname, global.thumb, btn, global.thumb)
+                        } else if (setbot.templateGif) {
+                        Miku.send5ButGif(m.chat, menulist, global.botname, global.vidmenu, btn, global.thumb)
+                        } else if (setbot.templateVid) {
+                        Miku.send5ButVid(m.chat, anu, global.botname, global.vidmenu, btn, global.thumb)
+                        } else if (setbot.templateVideo) {
+                        Miku.send5ButVid(m.chat, menulist, global.botname, global.vidmenu, btn, global.thumb)
+                        /////////} else if (setbot.templateMsg) {
+                        /////////XeonBotInc.send5ButMsg(m.chat, menulist, global.botname, btn)
+                        } else if (setbot.templateDocument) {
+                        let buttonmenu = [
+        	{ urlButton: { displayText: `YouTube 🍒`, url : `${websitex}` } },
+            { urlButton: { displayText: `Script 🍜`, url: `${botscript}` } },
+            { quickReplyButton: { displayText: `All Menu 🍱`, id: 'allmenu'} },
+            { quickReplyButton: { displayText: `List Menu 🍢`, id: 'command'} },
+            { quickReplyButton: { displayText: `Owner 🤣`, id: 'owner'} }
+        	]
+        	Miku.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync("./Assets/pic5.jpg"), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
+                        }
+                     }
+            break
+                case 'command': {
+                	   if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                listMessage :{
+                    title: `Hi ${pushname}`,
+                    description: `Please Choose The Menu\n\n`,
+                    buttonText: "Menu",
+                    footerText: `${global.botname}`,
+                    listType: "SINGLE_SELECT",
+                    sections: [{
+								"title": "Initial Features Of Bot 🦄",
+								"rows": [
+									{
+										"title": "Other ☕",
+										"description": "Displays The List Of Other Features",
+										"rowId": `${prefix}othermenu`
+									}
+								]
+							},
+							{
+								"title": "Bot Features ❤️",
+								"rows": [
+									{
+										"title": "All Menu 🥀",
+										"description": "Displays The List Of All The Features!",
+										"rowId": `${prefix}allmenu`
+									},
+									{
+										"title": "Owner Menu 💠",
+										"description": "Displays The List Of Owner Features",
+										"rowId": `${prefix}ownermenu`
+										},
+									{
+										"title": "Group Menu ✨",
+										"description": "Displays The List Of Main Features",
+										"rowId": `${prefix}groupmenu`
+										},
+										{
+										"title": "Maker Menu 🌈",
+										"description": "Displays The List Of Logo Making Features",
+										"rowId": `${prefix}indomenu`
+									},
+									{
+										"title": "Sound Menu 🎵",
+										"description": "Displays The List Of Sound Features",
+										"rowId": `${prefix}soundmenu`
+									},
+									{
+										"title": "Download Menu ↘️",
+										"description": "Displays The List Of Download Features",
+										"rowId": `${prefix}downloadmenu`
+									},
+									{
+										"title": "Sticker Menu 🃏",
+										"description": "Displays The List Of Sticker Features",
+										"rowId": `${prefix}indomenu`
+									},
+									{
+										"title": "Search Menu 🔎",
+										"description": "Displays The List Of Searching Features",
+										"rowId": `${prefix}searchmenu`
+									},
+									{
+										"title": "Tool Menu ⚙️",
+										"description": "Displays The List Of Tool Features",
+										"rowId": `${prefix}toolmenu`
+									},
+									{
+										"title": "Random Image Menu 🌆",
+										"description": "Displays The List Of Random Image Features",
+										"rowId": `${prefix}randomimagemenu`
+									},
+									{
+										"title": "Image Effect Menu 🖼️",
+										"description": "Displays The List Of Image Effect Features",
+										"rowId": `${prefix}imageeffectmenu`
+									},
+										{
+											"title": "Anime Menu 😘",
+										"description": "Displays The List Of Random Anime Features",
+										"rowId": `${prefix}animemenu`
+										},
+										{
+											"title": "Emote Menu 😀",
+										"description": "Displays The List Of Emote Features",
+										"rowId": `${prefix}emotemenu`
+										},
+										{
+										"title": "Anime Sticker Menu ☺️",
+										"description": "Displays The List Of Anime Sticker Features",
+										"rowId": `${prefix}animestickermenu`
+									     },
+									{
+										"title": "Nsfw Menu 🤓",
+										"description": "Displays The List Of Nsfe Features",
+										"rowId": `${prefix}nsfwmenu`
+									     },
+										{
+											"title": "Fun Menu 🕺",
+										"description": "Displays The List Of Fun Features",
+										"rowId": `${prefix}funmenu`
+										},
+										{
+										"title": "Game Menu 🎮",
+										"description": "Displays The List Of Game Features",
+										"rowId": `${prefix}indomenu`
+									},
+										{
+											"title": "Convert Menu ⚒️",
+										"description": "Displays The List Of Convert Features",
+										"rowId": `${prefix}convertmenu`
+										},
+										{
+											"title": "Database Menu ♻️",
+										"description": "Displays The List Of Database Features",
+										"rowId": `${prefix}databasemenu`
+										},
+										{
+										"title": "Indo Menu  🦜",
+										"description": "Displays The List Of Indo Features",
+										"rowId": `${prefix}indomenu`
+									},
+										{
+											"title": "Horoscope Menu 🕊️",
+										"description": "Displays The List Of Horoscope Features",
+										"rowId": `${prefix}indohoroscopemenu`
+										}
+								]
+							},
+							{
+								"title": "Chat With Fellow Users 🌝",
+								"rows": [
+									{
+										"title": "Anonymous Chat Menu 🙎🏻‍♂️",
+										"description": "Displays The List Of Anonymous Chat Features",
+										"rowId": `${prefix}anonymousmenu`
+									}
+								]
+							},
+							{
+								"title": "Credit ©️",
+								"rows": [
+									{
+										"title": "Thanks To ❤️",
+										"description": "Displays The List Of Credit Of The Bot !!",
+										"rowId": `${prefix}tqtt`
+									}
+								]
+							}
+						],
+          listType: 1
+                }
+            }), {})
+            Miku.relayMessage(m.chat, template.message, { messageId: template.key.id })
+            }
+            break
+case 'allmenu':
+	   if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+var unicorn = await getBuffer(picak+'All Menu')
+await XeonBotInc.send5ButImg(from, `╔════⧫🧧𝑪𝒐𝒓𝒆🧧
 ║ -profile
 ║ -help
 ║ -delete
@@ -5671,11 +5862,7 @@ Here's the list of my Commands.
 ║ -support
 ║ -repo
 ║ -script
-║
-╚════════════╝ 
-
 ╔════⧫🎀𝑶𝒘𝒏𝒆𝒓🎀
-║
 ║ -self
 ║ -public
 ║ -ban
@@ -5685,11 +5872,7 @@ Here's the list of my Commands.
 ║ -block
 ║ -unblock
 ║ -broadcast
-║
-╚════════════╝
-
 ╔════⧫👥𝑮𝒓𝒐𝒖𝒑👥
-║
 ║ -promote
 ║ -demote
 ║ -revoke
@@ -5705,11 +5888,7 @@ Here's the list of my Commands.
 ║ -group
 ║ -nsfw
 ║ -welcome
-║
-╚════════════╝
-
 ╔════⧫⛓️𝑨𝒏𝒕𝒊 𝑳𝒊𝒏𝒌⛓️
-║
 ║ -antilinkgc
 ║ -antilinktg
 ║ -antilinktt
@@ -5720,11 +5899,7 @@ Here's the list of my Commands.
 ║ -antilinktwit
 ║ -antilinkall
 ║ -antiwame
-║
-╚════════════╝
-
 ╔════⧫🔎𝑺𝒆𝒂𝒓𝒄𝒉🔍
-║
 ║ -play
 ║ -song
 ║ -yts
@@ -5743,11 +5918,53 @@ Here's the list of my Commands.
 ║ -anime
 ║ -animestory
 ║ -manga
-║
-╚════════════╝
-
+║ -couple
+║ -mysoulmate
+║ -hot
+║ -sexy
+║ -kind
+║ -idiot
+║ -handsome
+║ -beautiful
+║ -cute
+║ -pretty
+║ -lesbian
+║ -noob
+║ -bastard
+║ -foolish
+║ -nerd
+║ -asshole
+║ -gay
+║ -smart
+║ -stubble
+║ -dog
+║ -horny
+║ -cunt
+║ -wibu
+║ -noobra
+║ -nibba
+║ -nibbi
+║ -comrade
+║ -mumu
+║ -rascal
+║ -scumbag
+║ -nuts
+║ -fagot
+║ -scoundrel
+║ -ditch
+║ -dope
+║ -gucci
+║ -lit
+║ -dumbass
+║ -crackhead
+║ -mf
+║ -motherfucker
+║ -sucker
+║ -fuckboy
+║ -playboy
+║ -fuckgirl
+║ -playgirl
 ╔════⧫⚙️𝑪𝒐𝒏𝒗𝒆𝒓𝒕⚙️
-║
 ║ -sticker
 ║ -toimg
 ║ -tovideo
@@ -5758,11 +5975,7 @@ Here's the list of my Commands.
 ║ -tourl
 ║ -tomp3
 ║ -toaudio
-║
-╚════════════╝
-
 ╔════⧫🔉𝑨𝒖𝒅𝒊𝒐🔉
-║
 ║ -bass
 ║ -tempo
 ║ -blown
@@ -5775,11 +5988,7 @@ Here's the list of my Commands.
 ║ -robot
 ║ -slow
 ║ -squirrel
-║
-╚════════════╝
-
 ╔════⧫💥𝑹𝒆𝒂𝒄𝒕𝒊𝒐𝒏𝒔💥
-║
 ║ -bonk
 ║ -cry
 ║ -bully
@@ -5805,11 +6014,7 @@ Here's the list of my Commands.
 ║ -poke
 ║ -dance
 ║ -cringe
-║
-╚════════════╝
- 
 ╔════⧫📥𝑫𝒐𝒘𝒏𝒍𝒐𝒂𝒅𝒆𝒓📥
-║
 ║ -play
 ║ -ytmp3
 ║ -ytmp4
@@ -5824,11 +6029,7 @@ Here's the list of my Commands.
 ║ -tiktok
 ║ -tiktokaudio
 ║ -tiktoknowm
-║
-╚════════════╝
- 
 ╔════⧫☄️𝑾𝒆𝒆𝒃☄️
-║
 ║ -waifu
 ║ -loli
 ║ -neko
@@ -5847,21 +6048,13 @@ Here's the list of my Commands.
 ║ -anime
 ║ -animewallpaper2
 ║ -manga
-║
-╚════════════╝
- 
 ╔════⧫📣𝑰𝒏𝒇𝒐𝒓𝒎𝒂𝒕𝒊𝒗𝒆📣
-║
 ║ -animequote
 ║ -quote
 ║ -covid
 ║ -earthquake
 ║ -wiki
-║
-╚════════════╝
- 
 ╔════⧫🦋𝑭𝒖𝒏🦋
-║
 ║ -reaction
 ║ -truth
 ║ -dare
@@ -5882,46 +6075,12 @@ Here's the list of my Commands.
 ║ -quotes
 ║ -darkjoke
 ║ -stickermeme
-║
-╚════════════╝
- 
 ╔════⧫🐬𝑬𝒔𝒔𝒆𝒏𝒕𝒊𝒂𝒍/𝑶𝒕𝒉𝒆𝒓𝒔🐬
-║
 ║ -translate
 ║ -fliptext
 ║ -toletter
-║
-╚════════════╝
- 
-🍁 Type " *${prefix}nsfw* " then enable NSFW (Admin only!) 
-🍁 Then type " *${prefix}nsfwmenu* " to get full list of NSFW commands.
-
-
-
- 『  *${global.BotName}*  』
- Powered by: *Zeeshan*
- 
- 🔰 To use any of these commands type 
- " *${prefix}<Command name>* ".
- 
- 🔰 To get Support Group link type " *${prefix}support* ".
- 🔰 Type " *${prefix}help* " to get full command list.`
-     
-      let buttonshelpm = [
-{ quickReplyButton: { displayText: `Owner 🤣`, id: 'owner'} }
-    ]
-                let buttonMessage = {
-                    file: Miku.sendMessage(m.chat,{video:fs.readFileSync('./system/miku2.mp4'),gifPlayback:true,caption:helpmenu},{quoted:m}),
-                    caption: helpmenu,
-                    footer: `${BotName}`,
-                    buttons: buttonshelpm,
-                    headerType: 4
-                }
-            Miku.sendMessage(m.chat, buttonMessage,{ quoted:m })
-                }
+╚════════════╝` + '' + ' ', `${Miku}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
-
-
 
 case '':
     if(isCmd){
