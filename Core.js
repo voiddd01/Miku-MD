@@ -3770,7 +3770,7 @@ case 'charactercheck':
 					if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Zeeshan`)
 					const Mikutttt =['Compassionate','Generous','Grumpy','Forgiving','Obedient','Good','Simp','Kind-Hearted','patient','UwU','top, anyway','Helpful']
 					const taky = Mikutttt[Math.floor(Math.random() * Mikutttt.length)]
-					Miku.sendMessage(from, { text: `Character Check : ${q}\nAnswer : *${taky}*` }, { quoted: m })
+					Miku.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }}, { text: `Character Check : ${q}\nAnswer : *${taky}*` }, { quoted: m })
 				     break
 
       case 'foolish':
