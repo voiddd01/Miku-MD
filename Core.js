@@ -6570,20 +6570,33 @@ Here's the list of my Commands.
  
  🔰 To get Support Group link type " *${prefix}support* ".
  🔰 Type " *${prefix}help* " to get full command list.`
-     
-      let buttonshelpm = [
-{ quickReplyButton: { displayText: `Owner 🤣`, id: 'owner'} }
-    ]
+             const buttonsd = [
+          {
+            buttonId: `${prefix}owner`,
+            buttonText: {
+              displayText: "owner",
+            },
+            type: 1,
+          },
+          {
+            buttonId: `${prefix}help`,
+            buttonText: {
+              displayText: " Help",
+            },
+            type: 1,
+          },
+        ];
                 let buttonMessage = {
                     file: Miku.sendMessage(m.chat,{video:fs.readFileSync('./system/miku2.mp4'),gifPlayback:true,caption:helpmenu},{quoted:m}),
                     caption: helpmenu,
                     footer: `${BotName}`,
                     buttons: buttonshelpm,
                     headerType: 4
-                }
-            Miku.sendMessage(m.chat, buttonMessage,{ quoted:m })
-                }
-break
+        };
+        Miku.sendMessage(m.chat, buttonMessage, {
+          quoted: m,
+        });
+        break;
 
 
 
