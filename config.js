@@ -63,18 +63,18 @@ global.ntilink = []
 
 global.mess = {
     jobdone: 'Job done...',
-    useradmin: 'Sorry, only *Group Admins* can use this command *Baka*!',
-    botadmin: 'Sorry, i cant execute this command without being an *Admin* of this group.',
-    botowner: 'Only my *Owner* can use this command, Baka!',
+    useradmin: 'Abey Chutiye Sirf Group Admin Use Kr Sakte Hai Ye Command *Baka*!',
+    botadmin: 'Abey oo pagalo ke sardar bina *Admin* Bane Kese Process Karu Ye Command *Admin* Bana Pehle',
+    botowner: 'Sirf Mere Maalik Mere Aaka Zeeshan sahab (bot dev.) hi use kar sakte hai ye command',
     grouponly: 'This command is only made for *Groups*, Baka!',
     privateonly: 'This command is only made for *Private Chat*, Baka!',
     botonly: 'Only the *Bot itself* can use this command!',
-    waiting: 'Chotto Matte...',
-    nolink: 'Please provide me *link*, Baka!',
+    waiting: 'Ruk ab do mint...',
+    nolink: 'Abey Chutiye *Link* To De!',
     error: 'An error occurd!',
     banned: 'You are *Banned* fron using commands!',
     bangc: 'This Group is *Banned* from using Commands!',
-    nonsfw: 'Dont be a pervert Baka! This is not a NSFW enabled group!'
+    nonsfw: 'Dont be a pervert Baka! This is not a NSFW enabled group! Abey padhai likhai karo IAS YAS bano, Lekin nahi tumhe to pervert banna hai bc'
     
 }
 
