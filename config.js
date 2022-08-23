@@ -65,7 +65,7 @@ global.mess = {
     jobdone: 'Job done...',
     useradmin: 'Abey Chutiye Sirf Group Admin Use Kr Sakte Hai Ye Command *Baka*!',
     botadmin: 'Abey oo pagalo ke sardar bina *Admin* Bane Kese Process Karu Ye Command *Admin* Bana Pehle',
-    botowner: 'Sirf Mere Maalik Mere Aaka Zeeshan sahab (bot dev.) hi use kar sakte hai ye command',
+    botowner: 'Sirf Mere Maalik Mere Aaka Zeeshan sahab (bot dev.) hi use kar sakte hai ye command ab -owner command de',
     grouponly: 'This command is only made for *Groups*, Baka!',
     privateonly: 'This command is only made for *Private Chat*, Baka!',
     botonly: 'Only the *Bot itself* can use this command!',
