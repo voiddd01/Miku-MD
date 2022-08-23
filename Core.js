@@ -6596,17 +6596,7 @@ Here's the list of my Commands.
         Miku.sendMessage(m.chat, buttonMessage, {
           quoted: m,
         });
-        break;
-
-
-
-case '':
-    if(isCmd){
-    if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-
-      mikupic ='https://wallpapercave.com/wp/wp10524580.jpg'
-    
+        break;    
         
  const needhelpmenu = `Do you need help ${pushname} Senpai? Type *${prefix}help* to get my full command list.`
      
