@@ -6570,34 +6570,31 @@ Here's the list of my Commands.
  
  🔰 To get Support Group link type " *${prefix}support* ".
  🔰 Type " *${prefix}help* " to get full command list.`
-             const buttonsd = [
-          {
-            buttonId: `${prefix}owner`,
-            buttonText: {
-              displayText: "owner",
-            },
-            type: 1,
-          },
-          {
-            buttonId: `${prefix}help`,
-            buttonText: {
-              displayText: " Help",
-            },
-            type: 1,
-          },
-        ];
+ 
+      let buttonshelpm = [
+{ quickReplyButton: { displayText: `Owner 🤣`, id: 'owner'} }
+    ]
                 let buttonMessage = {
                     file: Miku.sendMessage(m.chat,{video:fs.readFileSync('./system/miku2.mp4'),gifPlayback:true,caption:helpmenu},{quoted:m}),
                     caption: helpmenu,
                     footer: `${BotName}`,
                     buttons: buttonshelpm,
                     headerType: 4
-        };
-        Miku.sendMessage(m.chat, buttonMessage, {
-          quoted: m,
-        });
-        break;    
-        
+                }
+            Miku.sendMessage(m.chat, buttonMessage,{ quoted:m })
+                }
+break
+
+
+
+case '':
+    if(isCmd){
+    if (isBan) return reply(mess.banned)	 			
+    if (isBanChat) return reply(mess.bangc)
+
+      mikupic ='https://wallpapercave.com/wp/wp10524580.jpg'
+    
+	    
  const needhelpmenu = `Do you need help ${pushname} Senpai? Type *${prefix}help* to get my full command list.`
      
          let butRun = [
