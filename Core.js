@@ -2596,17 +2596,15 @@ if (isBanChat) return reply(mess.bangc)
      }
      break
 
-     case 'add': {
-	if (isBan) return reply(mess.ban)	 			
-     if (isBanChat) return reply(mess.banChat)
-     if (!m.isGroup) return replay(`${mess.group}`)
-     if (!isBotAdmins) return replay(`${mess.botAdmin}`)
-     if (!isAdmins) return replay(`${mess.admin}`)
+     case 'add':{        
+        if (!m.isGroup) return replay(mess.grouponly)
+     if (!isBotAdmins) return replay(mess.botadmin)
      let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-     await Miku.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+     if (users.length == 0) return replay(`please write the number of the person you want to add`)
+      await Miku.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => replay(`✅Successfully Added!`)).catch((err) => replay(`Cannot add user to group`))
      }
-     break		
-
+     break
+		
      case 'remove':{
         if (isBan) return reply(mess.banned)	 			
      if (isBanChat) return reply(mess.bangc)
