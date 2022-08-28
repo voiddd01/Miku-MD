@@ -3890,6 +3890,7 @@ case 'music': case 'play': case 'song': case 'ytplay': {
  let buttons = [
  {buttonId: `-ytvd ${ytvc.link}`, buttonText: {displayText: '► Video'}, type: 1},
  {buttonId: `-ytad ${ytvc.mp3}`, buttonText: {displayText: '♫ Audio'}, type: 1}
+ {buttonId: `-owner ${global.OwnerName}`, buttonText: {displayText: 'BOT OWNER'}, type: 1}
  ]
  let buttonMessage = {
  image: { url: anu.thumbnail },
